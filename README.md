@@ -4,12 +4,12 @@ A simple .NET API with GitHub Actions CI/CD pipeline that automatically builds a
 ## How to Run (Using Docker CLI)
 1. **Pull the image from Docker Hub:**  
    ```sh
-   docker pull amiromumi/dockerized-dotnetapi-cicd::latest
+   docker pull amiromumi/dockerized-dotnetapi-cicd:latest
    ```
 
 2. **Run the Docker container:**  
    ```sh
-   docker run -d -p 2503:80 --name mydockerapi-container-cicd amiromumi/dockerized-dotnetapi-cicd:
+   docker run -d -p 2503:80 --name mydockerapi-container-cicd amiromumi/dockerized-dotnetapi-cicd
    ```
 
 3. **Access the API:**  
@@ -31,7 +31,7 @@ By default, the API runs in **Production mode** inside the Docker container.
 You can override this by passing an environment variable:
 
 ```sh
-docker run -d -p 2503:80 -e ASPNETCORE_ENVIRONMENT=Development --name mydockerapi-container-cicd amiromumi/dockerized-dotnetapi-cicd:
+docker run -d -p 2503:80 -e ASPNETCORE_ENVIRONMENT=Development --name mydockerapi-container-cicd amiromumi/dockerized-dotnetapi-cicd
 ```
 
 Check environment by visiting:  
